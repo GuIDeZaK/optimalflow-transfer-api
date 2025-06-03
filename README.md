@@ -34,6 +34,7 @@ A lightweight backend service built in **Go (Fiber)** to manage users and secure
 
 ## 🧱 Project Structure
 
+```
 .
 ├── cmd/
 │ └── main.go # Entry point
@@ -52,7 +53,7 @@ A lightweight backend service built in **Go (Fiber)** to manage users and secure
 ├── docker-compose.yml
 ├── go.mod / go.sum
 └── README.md
-
+```
 
 ---
 
@@ -98,3 +99,21 @@ To support a 10x increase in load:
 Use this in Postman or curl headers:
 
 Authorization: Bearer <token>
+
+## 📬 API Testing with Postman
+
+You can test the API easily using the provided Postman collection:
+
+📂 `OptimalFlowTransferAPI.postman_collection.json`
+
+### 📌 Import Steps:
+
+1. Open Postman
+2. Click "Import" → Choose the `.postman_collection.json` file
+3. Use the available requests to test:
+
+   - `POST /users` – Create a new user  
+   - `POST /login` – Login & get JWT token  
+   - `GET /users` – List all users  
+   - `GET /users/:id` – Get user by ID  
+   - `POST /transfer` – Transfer balance (requires JWT auth)
