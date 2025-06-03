@@ -35,15 +35,19 @@ A lightweight backend service built in **Go (Fiber)** to manage users and secure
 ## 🧱 Project Structure
 
 .
-├── cmd/main.go # Entry point
+├── cmd/
+│ └── main.go # Entry point
 ├── internal/
 │ ├── handler/ # HTTP handlers
 │ ├── service/ # Business logic
 │ ├── repository/ # DB interaction
 │ ├── model/ # GORM models
-├── pkg/middleware/ # JWT Middleware
-├── .env # Docker environment
-├── .env.local # Local development environment
+├── pkg/
+│ └── middleware/ # JWT Middleware
+├── .env # Docker environment (gitignored)
+├── .env.local # Local dev environment (gitignored)
+├── .env.example # Example for Docker setup
+├── .env.local.example # Example for local dev
 ├── Dockerfile
 ├── docker-compose.yml
 ├── go.mod / go.sum
