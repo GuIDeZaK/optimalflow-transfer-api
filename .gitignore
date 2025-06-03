@@ -1,0 +1,23 @@
+# Binaries
+/app
+*.exe
+*.out
+
+# Environment Files
+.env
+.env.local
+
+# IDE/editor config
+.vscode/
+.idea/
+*.swp
+
+# Go modules cache
+vendor/
+go.sum
+
+# Docker volumes
+pgdata/
+
+# Log files
+*.log
